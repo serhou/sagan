@@ -22,7 +22,7 @@
           <div id="content" class="span12">
               <h2>Projects</h2>
               <table class='table dashboard--posts'>
-                  <tr th:each="project : ${projects}" layout:fragment="post-row">
+                  <tr th:each="project : ${projects}">
                       <td th:text="${project.id}">spring-framework</td>
                       <td>
                           <a th:href="@{'/admin/projects/' + ${project.id}}">Edit</a>
